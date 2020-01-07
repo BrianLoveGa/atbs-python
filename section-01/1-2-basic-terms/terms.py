@@ -34,6 +34,10 @@
 # returns error
 
 
+# double asterik equals exponent _-_ 2**3 = 2^3 = 2*2*2 = 8
+# percent equals modulus or divide remainder  _-_  22 % 8 = 6 ( 22/8 = 2 R 6 _-_ remember remainder back inthe early math days) 
+# double slash equals rounded / floored division _-_ 22 // 8 = 2 (see above)
+
 # data_types
 
 # whole numbers - int - integers
