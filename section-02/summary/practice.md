@@ -79,16 +79,63 @@ print('spam')
 
 9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
 
+spam = 1
+
+def spam_equals():
+    if spam == 1:
+        print("hello")
+    elif spam == 2:
+        print("howdy")
+    else:
+        print('Greetings')
+
+spam_equals()
 
 
 10. What keys can you press if your program is stuck in an infinite loop?
 
+control c
+
 11. What is the difference between break and continue?
+
+continue == skip
+break == stop
 
 12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
 
+
+those are all equal, default values are _,1,1
+start at 0 count up to 9 (for a total of 10) by 1
+
 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+
+for i in range(1,11):
+    print(i)
+    
+
+x=1
+while x <11:
+    print(x)
+    x+=1
 
 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
 
+
+dot notation
+
+import spam
+
+spam.bacon()
+
 Extra credit: Look up the round() and abs() functions on the internet, and find out what they do. Experiment with them in the interactive shell.
+
+round is the same as last section...
+
+round() function - syntax - round(number, digits) rounds a float or int to x amount of decimal places (digits default is 0)
+
+EXAMPLE - round(4) == 4 ..... round(4,4) == 4 ..... round(4.45678,2) == 4.46 more examples below
+
+
+absolute value - abs() - syntax - abs(number)
+
+EXAMPLE - abs(-7) == 7 ...  abs(7) == 7

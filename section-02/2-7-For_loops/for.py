@@ -77,3 +77,6 @@ print(bool((5 > 4) or (3 == 5)))
 print(bool(not ((5 > 4) or (3 == 5))))
 print(bool((True and True) and (True == False)))
 print(bool((not(False)) or (not(True))))
+
+
+print(abs(7))
