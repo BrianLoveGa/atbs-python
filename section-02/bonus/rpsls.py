@@ -1,10 +1,11 @@
 import random
 import sys
 
-
 # lets zazz it up here and make a rock paper scissors 
 #  with lizard & spock version
 # https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons
+# or if you're visual ... 
+# https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock_Paper_Scissors_Lizard_Spock_en.svg
 
 wins = 0
 losses = 0
