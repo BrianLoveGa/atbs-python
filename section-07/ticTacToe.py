@@ -100,16 +100,16 @@ def getComputerMove(board, computerLetter):
         playerLetter = 'X'
 # Here is our algorithm for our Tic Tac Toe AI:
     for i in range(1, 10):
-        copy = getBoardCopy(board)
-        if isSpaceFree(copy, i):
-            makeMove(copy, computerLetter, i)
-            if isWinner(copy, computerLetter):
+        boardCopy = getBoardCopy(board)
+        if isSpaceFree(boardCopy, i):
+            makeMove(boardCopy, computerLetter, i)
+            if isWinner(boardCopy, computerLetter):
                 return i
     for i in range(1, 10):
-        copy = getBoardCopy(board)
-        if isSpaceFree(copy, i):
-            makeMove(copy, playerLetter, i)
-            if isWinner(copy, playerLetter):
+        boardCopy = getBoardCopy(board)
+        if isSpaceFree(boardCopy, i):
+            makeMove(boardCopy, playerLetter, i)
+            if isWinner(boardCopy, playerLetter):
                 return i
     move = chooseRandomMoveFromList(board, [1, 3, 7, 9])
     if move != None:
