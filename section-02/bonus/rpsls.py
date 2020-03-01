@@ -20,7 +20,7 @@ while True:  # The main game loop.
             print('thanks for playing your final score was: ')
             print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
             sys.exit()  # Quit the program.
-        if playerMove in['ro','pa','sc','li','sp'] :
+        if playerMove in['ro','pa','sc','li','sp','r','p','s','l'] :
             break  # Break out of the player input loop.
         print('Type one of ro, pa, sc, li, so, or q.')
 
@@ -62,7 +62,8 @@ while True:  # The main game loop.
         ties = ties + 1
 
     # ways you win
-    # 2 ways to win with each option - 6 total outcomes
+    # 2 ways to win with each option - 10 total outcomes
+    #                                - 6 outcomes if classic Rock Paper Scissors
 
     elif playerMove == 'ro' and computerMove == 'sc':
         print('You win! rock crushes scissors')
@@ -95,7 +96,9 @@ while True:  # The main game loop.
         print('You win! Spock vaporizes rock')
         wins = wins + 1
 
-    # now the 6 losing scenarios 2 for each
+    # now the 10 losing scenarios 2 for each weapon choice
+    # I could just put elif print you lose losses +1 .... but 
+    # it's good to know how you lost to better prepare and win next time
 
     elif playerMove == 'ro' and computerMove == 'pa':
         print('You lose! computer paper covered your rock')
